@@ -7,7 +7,292 @@ nav grey: #5b5e6d;
 */
 
 
-.home-image {
-    position: flex;
-    flex-direction: column-reverse;
+/*
+background-grey: #F4F3F4;
+button-purple: #192592;
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+
+/* * { border: 1px solid black; } */
+
+body {
+
+   margin: 0;
+   padding: 0;
+   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+/* headings and p attributes start */
+
+h1 {
+    font-size: 5em;
+}
+
+/* headings and p attributes finish */
+
+
+/* nav start */ 
+
+nav {
+   /* background-image: url('../images/slack-logo.png');
+   background-size: 25%;
+   background-position: left;
+   background-repeat: no-repeat; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+}
+
+nav > img {
+   max-height:  80%;
+   margin-left: 30px;
+   margin: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    text-align: center;
+    margin: 15px;
+}
+
+/* nav finish */
+
+/* header start */
+
+header {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 30px;
+}
+
+.header-image img {
+    display: block; 
+    max-width: 100%; 
+    max-height: 100vh;
+}
+
+.header-image {
+    flex: 1 1 auto;
+    min-width: 15em;
+    max-width: 50%;
+    padding: 80px 0 80px 30px;
+}
+
+.header-content {
+   flex: 1 1 auto;
+   flex-direction: column;
+   padding: 30px;
+   width: 50%;
+
+}
+.header-content > * {
+    display: inline-block;
+    max-width: 100%; 
+    max-height: 100vh;
+}
+
+.header-content button {
+    width: 300px;
+}
+.header-content div {
+    display: flex;
+    flex-direction: column;
+}
+
+ /* header finish */
+
+ /* main content start */
+
+.main-content-box {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #F4F3F4;
+   margin-top: 20px;
+   padding: 30px; 
+}
+
+.main-content-box button {
+    width: 400px;
+    border-color: #192592;
+    background-color: #F4F3F4;
+    color: #192592;
+}
+
+.main-content-box > * {
+    display: inline-block;
+}
+
+.company-logos {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 30px;
+}
+.company-logos div {
+    margin: 0 auto;
+    width: 33%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.company-logos img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* main content finish */
+
+/* try start */
+
+.try-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: white;
+    max-height: 200px;
+    margin: 30px;
+ }
+ 
+ .try-box div {
+    display: none;
+ }
+
+ .try-box p {
+     width: 300px;
+     margin: 0;
+     padding: 0;
+ }
+
+ .form {
+    height: 40px;
+    display: block;
+    width: 100%;
+ }
+
+ .try-box .my-button {
+    display: flex;
+    margin-left: auto;
+    align-self: flex-start;
+    width: 250px;
+ }
+
+ /* try start */
+
+
+
+.my-button {
+   background-color:#192592;
+   width: 80%;
+   display:inline-block;
+   color:#ffffff;
+   font-size:16px;
+   padding:13px 64px;
+   text-decoration:none;
+   position: flex;
+   justify-content: center;
+}
+
+/* footer start */
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    padding: 40px 60px 40px 40px;
+}
+
+.slak-footer img {
+    display: block; 
+    max-width: 100%; 
+    max-height: 100vh;
+}
+
+.slak-footer {
+    flex: 1 1 auto;
+    min-width: 15em;
+    max-width: 100%;
+    padding: 80px 0 80px 30px;
+}
+
+.column-box {
+   /* display: flex;
+   flex-wrap: wrap;
+   margin-left: 5%; */
+   display: flex;
+   justify-content: flex-end;
+   width: 100%;
+}
+
+.column-box ul {
+    margin-left: 10px;
+    list-style-type: none;
+    
+}
+
+.column-box li{
+    width: 200px;
+}
+
+.dark-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 80%;
+}
+
+.dark-footer ul > * {
+   display: block;
+   padding-left: 10px;
+
+}
+
+.dark-footer ul {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+}
+
+.dark-footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ .lang-options img {
+    height: 20px;
+    margin-right: 10px;
+ }
+
+.lang-options p {
+    display: flex;
+    align-self: flex-start;
+}
+ .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+ 
+ .icons i {
+    margin-left: 10px;
+    display: flex;
+    align-self: flex-start;
+ }
